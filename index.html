@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa folha de estilo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Importa arquivo de script -->
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <title>Calculadora de Formas Geometricas</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="img/calc-01.png" class="d-block mx-auto" alt="...">
+        </figure>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Bem-vindo ao JavaScript!</h1>
+                <input id="nomeUsuario" type="text">
+                <button onclick="mostrarNome()">Enviar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+    <h1>Bem-vindo ao JavaScript!</h1>
+    <br>
+    <label>Insira seu nome: </label>
+    <input id="nomeUsuario" type="text">
+    <button onclick="mostrarNome()">Enviar</button>
+    <br>
+    <p id="paragrafo"></p>
+    <br>
+    <h1>Calcular área do circulo</h1>
+    <input type="text" name="raio" id="raio" placeholder="Digite o valor do raio">
+    <button onclick="calcAreaCirculo()">Calcular</button>
+    <p id="area"></p>
+    <hr>
+    <hr>
+    <h1>Somar dois numeros</h1>
+    <input type="number" name="n1" id="n1" placeholder="Digite o primeiro numero">    
+    
+    <input type="number" name="n2" id="n2" placeholder="Digite o segundo numero">
+    <button onclick="soma()">Calcular</button>
+    <p id="soma"></p>
+</body>
+</html>

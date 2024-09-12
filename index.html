@@ -16,42 +16,118 @@
             <img src="img/calc-01.png" class="d-block mx-auto" alt="...">
         </figure>
     </header>
+
     <div class="container">
+        <h1> 1: Crie os códigos Javascript para calcular as áreas das seguintes figuras:</h1>
         <div class="row">
             <div class="col">
-                <h1>Bem-vindo ao JavaScript!</h1>
-                <input id="nomeUsuario" type="text">
-                <button onclick="mostrarNome()">Enviar</button>
+                <h3>Retângulo: base * altura</h3>
+                <input type="number" name="b1" id="b1" placeholder="Digite a base">    
+    
+                <input type="number" name="a1" id="a1" placeholder="Digite a altura">
+                <button onclick="retang()">Calcular</button>
+                <p id="retang"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Triângulo: (( base * altura ) / 2 )</h3>
+                <input type="number" name="b2" id="b2" placeholder="Digite a base">    
+    
+                <input type="number" name="a2" id="a2" placeholder="Digite a altura">
+                <button onclick="triang()">Calcular</button>
+                <p id="triang"></p>
             </div>
         </div>
         <div class="row">
-            <div class="col"></div>
+            <div class="col">
+                <h3>Losango: ( Diagonal maior * Diagonal menor ) / 2 </h3>
+                <input type="number" name="dm1" id="dm1" placeholder="Digite a diagonal maior">    
+    
+                <input type="number" name="dm2" id="dm2" placeholder="Digite a diagonal menor">
+                <button onclick="Losang()">Calcular</button>
+                <p id="Losang"></p>
+            </div>
         </div>
+
         <div class="row">
-            <div class="col"></div>
+            <div class="col">
+                <h3>Trapézio: ( ( Base maior + Base menor ) * altura ) / 2 </h3>
+                <input type="number" name="bm1" id="bm1" placeholder="Digite a Base maior">    
+    
+                <input type="number" name="bm2" id="bm2" placeholder="Digite a Base menor">
+
+                <input type="number" name="alt1" id="alt1" placeholder="Digite a altura">
+                <button onclick="trapezio()">Calcular</button>
+                <p id="trapezio"></p>
+            </div>
         </div>
     </div>
+<!-- ------------------------------------------------------------------ -->
+    <div class="container">
+        <h1> 2: Crie os códigos Javascript para calcular os volumes das seguintes figuras:</h1>
+        <div class="row">
+            <div class="col">
+                <h3>Cubo: lado³</h3>
+                <input type="number" name="kub" id="kub" placeholder="Digite a cubo">
 
+                <button onclick="cubo()">Calcular</button>
+                <p id="cubo"></p>
+            </div>
+        </div>
 
-    <h1>Bem-vindo ao JavaScript!</h1>
-    <br>
-    <label>Insira seu nome: </label>
-    <input id="nomeUsuario" type="text">
-    <button onclick="mostrarNome()">Enviar</button>
-    <br>
-    <p id="paragrafo"></p>
-    <br>
-    <h1>Calcular área do circulo</h1>
-    <input type="text" name="raio" id="raio" placeholder="Digite o valor do raio">
-    <button onclick="calcAreaCirculo()">Calcular</button>
-    <p id="area"></p>
-    <hr>
-    <hr>
-    <h1>Somar dois numeros</h1>
-    <input type="number" name="n1" id="n1" placeholder="Digite o primeiro numero">    
+        <div class="row">
+            <div class="col">
+                <h3>Paralelepípedo: ladoA * ladoB * ladoC</h3>
+                <input type="number" name="ladoA" id="ladoA" placeholder="Digite o lado A">    
+                <input type="number" name="ladoB" id="ladoB" placeholder="Digite o lado B">
+                <input type="number" name="ladoC" id="ladoC" placeholder="Digite o lado C">
+                <button onclick="paralelepipedo()">Calcular</button>
+                <p id="paralelepipedo"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>Esfera: pi * raio³ * 1.33</h3>
+                <input type="number" name="raio" id="raio" placeholder="Digite o raio">
+
+                <button onclick="esfera()">Calcular</button>
+                <p id="esfera"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Cilindro: pi * raio² * altura</h3>
+                <input type="number" name="raio2" id="raio2" placeholder="Digite o raio">
+                <input type="number" name="alt2" id="alt2" placeholder="Digite a altura">
+                <button onclick="cilindro()">cilindro</button>
+                <p id="cilindro"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Cone: pi * raio² * altura * 0.33</h3>
+                <input type="number" name="raio3" id="raio3" placeholder="Digite o raio">
+                <input type="number" name="alt3" id="alt3" placeholder="Digite a altura">
+                <button onclick="cilindro()">cone</button>
+                <p id="cone"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h3>Pirâmide: ( lado² * altura ) / 3</h3>
+                <input type="number" name="lado7" id="lado7" placeholder="Digite o lado">
+                <input type="number" name="alt7" id="alt7" placeholder="Digite a altura">
+                <button onclick="piraMid()">Calcular</button>
+                <p id="piraMid"></p>
+            </div>
+        </div>
+    </div>
     
-    <input type="number" name="n2" id="n2" placeholder="Digite o segundo numero">
-    <button onclick="soma()">Calcular</button>
-    <p id="soma"></p>
 </body>
 </html>
+

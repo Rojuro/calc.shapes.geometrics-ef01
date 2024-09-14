@@ -29,10 +29,10 @@ function Losang() {
 }
 
 function trapezio() {
-    let cubo = Number(document.getElementById("cubo").value)
+    let bm1 = Number(document.getElementById("bm1").value)
     let bm2 = Number(document.getElementById("bm2").value)
     let alt1 = Number(document.getElementById("alt1").value)    
-    let Losang = ((bm1 + bm2) * alt1) / 2
+    let trapezio = ((bm1 + bm2) * alt1) / 2
     document.getElementById("trapezio").innerText = trapezio
 }
 
@@ -49,8 +49,15 @@ function paralelepipedo() {
     let ladoA = Number(document.getElementById("ladoA").value)
     let ladoB = Number(document.getElementById("ladoB").value)
     let ladoC = Number(document.getElementById("ladoC").value)
-    let paralelepipedo = ladoA + ladoB + ladoC
+    let paralelepipedo = ladoA * ladoB * ladoC
     document.getElementById("paralelepipedo").innerText = paralelepipedo
+}
+
+function esfera() {
+    let raio5 = document.getElementById("raio5").value
+    const pi = 3.14
+    let esfera = (pi * raio5**3) * 1.33
+    document.getElementById("esfera").innerText = esfera
 }
 
 function cilindro() {
@@ -63,9 +70,9 @@ function cilindro() {
 
 function cone() {
     let raio3 = document.getElementById("raio3").value
-    let alt3 = Number(document.getElementById("alt2").value)
+    let altu1 = Number(document.getElementById("altu1").value)
     const pi = 3.14
-    let cone = ((pi * raio3**2) * alt3) * 0.33
+    let cone = pi * raio3**2 * altu1 * 0.33
     document.getElementById("cone").innerText = cone
 }
 
